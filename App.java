@@ -1,33 +1,32 @@
+import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
-        int tal1 = 2;
-        int tal2 = 30;
-
-        int summa_addition = tal1+tal2;
-        int summa_subtraktion = tal1-tal2;
-
-        System.out.println("summan av tal1 + tal2 är "+summa_addition);
-        System.out.println("summan av tal1 - tal2 är "+summa_subtraktion);
-
+        Scanner tangentbord = new Scanner(System.in);
+        System.out.print("ange tal1;");
+        int tal1 = tangentbord.nextInt();
+        System.out.print("ange tal2;");
+        int tal2 = tangentbord.nextInt();
         int produkt = tal1*tal2;
-        int kvot = tal1/tal2;
-        System.out.println("summan av tal1 * tal 2 är "+produkt);
-        System.out.println("summan av tal1 / tal2 är "+kvot);
+        System.out.println(tal1+"*"+tal2+"="+produkt);
 
-        int rest1 = 10%3;
-        int rest2 = 9%3;
-
-        System.out.println("resten av 10/3 är" +rest1);
-        System.out.println("resten av 9/3 är " +rest2);
-
-        double decimaltal_1 = 5.0;
-        double decimaltal_2 = 23.41;
-
-        double dec_summa_add = decimaltal_1+decimaltal_2;
-        double dec_summa_sub = decimaltal_1-decimaltal_2;
+        System.out.print("ange decimaltal 1;");
+        double decimaltal1 = tangentbord.nextInt();
+        System.out.print("ange decimaltal 2;");
+        double decimaltal2 = tangentbord.nextInt();
+        double kvot = decimaltal1/decimaltal2;
+        System.out.println(decimaltal1+"/"+decimaltal2+"="+kvot);
         
-        System.out.println("produkten av tal1*tal2 är " +produkt);
-        System.out.println("kvoten av tal1/tal2 är " + kvot);
+        System.out.print("ange tal3;");
+        int tal3 = tangentbord.nextInt();
+        System.out.print("ange tal4;");
+        int tal4 = tangentbord.nextInt();
+        int modulo = tal3%tal4;
+        System.out.println(tal3+"%"+tal4+"="+modulo);
 
+        
+
+
+       
+       
     }
 }
